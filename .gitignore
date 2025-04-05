@@ -1,0 +1,39 @@
+# === System Files ===
+.DS_Store
+Thumbs.db
+
+# === Node.js ===
+**/node_modules/
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+backend/venv/
+
+# === Build Outputs ===
+**/build/
+**/dist/
+
+# === Logs ===
+*.log
+
+# === Environment files ===
+.env
+.env.local
+.env.*.local
+
+# === Editor settings ===
+.vscode/
+.idea/
+
+# === Lockfiles (optional, if you want to exclude them) ===
+# /frontend/package-lock.json
+# /frontend/react_app/package-lock.json
+
+# === Ignore frontend React readme if not needed ===
+/frontend/react_app/README.md
