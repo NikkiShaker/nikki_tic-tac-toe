@@ -10,7 +10,7 @@ from game_logic import TicTacToeGame
 # malicious sites). By adding CORS(app) in the Flask app, you're saying it’s safe to let other origins (like React) make requests to me.
 
 app = Flask(__name__) # Creates a Flask app instance. You always add this line (or something very similar) to every Flask app
-CORS(app) # You must add this line because you're using Flask as a backend and React as the frontend, so they’re running on different ports
+CORS(app, origins="http://localhost:3001") # You must add this line because you're using Flask as a backend and React as the frontend, so they’re running on different ports
 
 # You're creating a new variable and setting it to an object of the class TicTacToeGame?
 game = TicTacToeGame()

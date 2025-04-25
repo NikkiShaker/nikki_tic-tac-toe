@@ -15,13 +15,38 @@
 
 .App-header {
   background-color: #282c34;
+  /* 
+    Sets the minimum height of an element to match the full height of the viewport.
+    The viewport is what you see on your screen without scrolling
+  */
   min-height: 100vh;
+
+  /* Tells browser to arrange the smaller components in a specific layout, either in a row or a column */
   display: flex;
+
+  /* This specifies the direction in which the flex items are placed (top to bottom) */
   flex-direction: column;
   align-items: center;
+
+  /*
+    If your items are laid out in a row (the default), they will be centered horizontally.
+    If your items are laid out in a column (flex-direction: column;), they will be centered vertically. 
+  */
   justify-content: center;
+
+  /*
+    10px is a fixed size of 10 pixels, but vmin is the smaller dimension between the viewport's width and height. 
+    For ex. if the viewport is 1000 pixels wide and 800 pixels tall, the smaller dimension is 800 pixels.
+
+    Using vmin instead of vh ensures that elements scale proportionally based on the smaller dimension of the viewport, 
+    which helps to maintain consistent appearance across devices. 
+
+    Using vh/vmin instead of just px is so that the size of the font will be determined by the size of the viewport.
+    The calc() function adds these two values together, resulting in a font size that adjusts based on the viewport size 
+    while also maintaining a minimum size of 10 pixels.
+  */
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #FBC6CF;
 }
 
 .App-link {
@@ -32,6 +57,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

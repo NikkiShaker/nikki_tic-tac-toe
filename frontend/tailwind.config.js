@@ -1,10 +1,8 @@
 // tailwind.config.js
-module.exports = {
-    content: [
-        "./src/**/*.{js,jsx,ts,tsx}",
-    ],
+export default {
+    content: ["./react_app/src/**/*.{js,jsx}"],
     theme: {
         extend: {},
     },
     plugins: [],
-}
+};
